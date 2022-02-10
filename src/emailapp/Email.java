@@ -114,4 +114,33 @@ public class Email {
         System.out.println("Mailbox capacity"+this.mailCapacity+"mb");
         System.out.println("Alternate mail"+this.alter_email);
     }
+    //Store in File
+    public void storefile(){
+        try{
+            FileWriter in = new FileWriter("C:\\Users\\Dell\\Desktop\\info.txt");
+            in.write("First name:"+this.fname);
+            in.append("\nLast name:"+ this.lname);
+            in.append("\nEmail:"+ this.email);
+            in.append("\nPassword:"+ this.password);
+            in.append("\nCapacity:"+ this.mailCapacity);
+            in.append("\nPassword:"+ this.password);
+            in.append("\nAlternate mail:"+ this.alter_email);
+            in.close();
+            System.out.println("Data Stored..");
+
+        }catch(Exception e){System.out.println(e);}
+    }
+    // Reading file method
+    public void readfile(){
+        try{
+            FileReader f1 = new FileReader("C:\\Users\\Dell\\Desktop\\info.txt");
+            int i;
+            while ((i=f1.read())!= 1)) {
+                System.out.println((char)i);
+            }
+            System.out.println();
+            f1.close();
+
+        }catch(Exception e){System.out.println(e);}
+    }
 }

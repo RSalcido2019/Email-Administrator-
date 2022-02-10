@@ -14,7 +14,7 @@ public class EmailApp {
         Email em1 = new Email(f_name, l_name);
         int choice = -1;
         do{
-            System.out.println("\n ***********************\n Enter your choice\n1.Show Info\n2.Change Password\n3.Change mailbox capacity\n4. Set Alternative mail\n5.Exit");
+            System.out.println("\n ***********************\n Enter your choice\n1.Show Info\n2.Change Password\n3.Change mailbox capacity\n4. Set Alternative mail\n5.Store data File storage\n6.Display data in file.\n7.Exit");
             choice = s.nextInt();
             switch (choice){
                 case 1:
@@ -30,6 +30,12 @@ public class EmailApp {
                     em1.alternate_email();
                     break;
                 case 5:
+                    em1.storefile();
+                    break;
+                case 6:
+                    em1.readfile();
+                    break;
+                case 7:
                     System.out.println("Thank you for using application");
                     break;
                 default:
