@@ -19,9 +19,9 @@ public class Email {
         //copied the value from the private to this program
         this.fname = fname;
         this.lname = lname;
-        System.out.println("New Employee:" + this.fname+""+this.lname);
+        System.out.println("New Employee:" + this.fname+ " " +this.lname);
          //Calling methods
-        this.dept = this.set_dept(); //Department
+        this.dept = this.setDept(); //Department
         this.password = this.generate_password(8); //Password
         this.email = this.generate_email(); //email generation
     }
@@ -30,7 +30,7 @@ public class Email {
         return this.fname.toLowerCase()+"."+this.lname.toLowerCase()+"@"+this.dept.toLowerCase()+".company.com";
     }
     //Asking for department
-    private String serDept(){
+    private String setDept(){
         System.out.println("Department codes \n1 for Sales \n2 for Development \n3 for Accounting \n0 for none");
         boolean flag = false;
 

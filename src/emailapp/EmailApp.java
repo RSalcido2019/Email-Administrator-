@@ -14,7 +14,7 @@ public class EmailApp {
         Email em1 = new Email(f_name, l_name);
         int choice = -1;
         do{
-            System.out.println("\n *******\n Enter your choice\n1.Show Info\n2.Change Password\n.3Change mailbox capacity\n4. Set Alternative mail\n5.Exit");
+            System.out.println("\n ***********************\n Enter your choice\n1.Show Info\n2.Change Password\n3.Change mailbox capacity\n4. Set Alternative mail\n5.Exit");
             choice = s.nextInt();
             switch (choice){
                 case 1:
