@@ -106,6 +106,10 @@ public class Email {
     //Display user information method
     public void getUserInfo(){
         System.out.println("New:"+this.fname+" "+this.lname);
-
+        System.out.println("Department:"+this.dept);
+        System.out.println("Email:"+this.email);
+        System.out.println("Password:"+this.password);
+        System.out.println("Mailbox capacity"+this.mailCapacity+"mb");
+        System.out.println("Alternate mail"+this.alter_email);
     }
 }
