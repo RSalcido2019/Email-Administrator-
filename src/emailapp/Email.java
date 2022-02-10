@@ -20,8 +20,10 @@ public class Email {
         this.fname = fname;
         this.lname = lname;
         System.out.println("New Employee:" + this.fname+""+this.lname);
-
-
+         //Calling methods
+        this.dept = this.set_dept(); //Department
+        this.password = this.generate_password(8); //Password
+        this.email = this.generate_email(); //email generation
     }
     //Generate mail method {private allows abstraction}
     private String generate_email(){
