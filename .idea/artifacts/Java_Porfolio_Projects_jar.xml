@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Java-Porfolio-Projects:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Java_Porfolio_Projects_jar</output-path>
+    <root id="archive" name="Java-Porfolio-Projects.jar">
+      <element id="module-output" name="Java-Porfolio-Projects" />
+    </root>
+  </artifact>
+</component>
